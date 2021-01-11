@@ -1,0 +1,24 @@
+https://khoapham.vn/download/laravel/bai1.pdf
+https://www.youtube.com/watch?v=Iqy4GZwxFrw&list=PLzrVYRai0riQ-K705397wDnlhhWu-gAUh&index=7
+template:
+master.blade.php: @yield('noidung')
+noidung.blade.php: @extends('tên file master')/@section('noidung')-dữ liệu trang-@endsection
+làm dự án cắt template laravel
+https://www.youtube.com/watch?v=CjA79XhHVQI&list=PLWTu87GngvNxpWN6FVuEcS-YvFNq6RnqG&index=1&fbclid=IwAR2PJvyBcA3BA95VUtW_tbEv7z-CDOpXN2p8A7op3nGP78ng9QUc0xditMA
+php artisan make:controller tên controller //tạo controller
+php artisan make:migration create_tbl_products_table --create=tbl_admin //tạo và liên kết database
+php artisan migrate
+//hoàn lại table
+php artisan make:rollback
+//tạo mail vào hàng chờ
+https://viblo.asia/p/tung-buoc-tao-queues-send-mail-trong-laravel-E375zgnRKGW
+
+ Thế: giao project mẫu cho Thế làm để đánh giá kết quả học của Thế tuần qua trừ chính sách
+
+ $table->increments('order_detail_id');
+            $table->integer('order_id');
+            $table->integer('product_id');
+            $table->string('product_name');
+            $table->string('product_price');
+            $table->integer('product_sales_quantity');
+            $table->timestamps();
